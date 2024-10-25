@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <!--
+      SEO Meta Tags
+      These meta tags improve the document's visibility on search engines.
+    -->
+    <meta name="author" content="Isak Ruas">
+    <meta name="description" content="A useful tool to assist with reading, improving speed and comprehension. Ideal for students and avid readers.">
+    <meta name="keywords" content="reading tool, reading aid, reading speed, comprehension, text, efficient reading">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://word-by-word-reader.com">
+
+    <!--
+      Social Media Tags
+      Open Graph meta tags for enhancing the appearance when shared on social media platforms.
+    -->
+    <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+    <meta property="og:description" content="A useful tool to assist with reading, enhancing speed and comprehension.">
+    <meta property="og:url" content="https://word-by-word-reader.com">
+    <meta property="og:image" content="<%= BASE_URL %>image.png">
+
+    <!--
+      Additional Links
+      Include CSS for styling; ensure the path is correctly set in your environment.
+    -->
+    <link rel="stylesheet" href="<%= BASE_URL %>styles.css">
+
+    <!--
+      GitHub Project Link
+      Meta tag with link to the project's GitHub repository for interested developers.
+    -->
+    <meta name="github" content="https://github.com/isakruas/word-by-word-reader">
   </head>
   <body>
+    <!--
+      Noscript Banner
+      User notification for those with JavaScript disabled in their browsers.
+      Provides information that JavaScript functionality is required for the app to run properly.
+    -->
     <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+      <strong>We apologize, but <%= htmlWebpackPlugin.options.title %> does not work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    
+    <!--
+      Vue App Mount Point
+      The root element that the Vue.js application will target and render its content into.
+    -->
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
