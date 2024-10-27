@@ -38,6 +38,20 @@
         <button @click="previousStep">Back</button>
       </div>
     </div>
+
+    <div style="border: 1px solid #ccc; padding: 20px; margin: 20px 0; border-radius: 5px;">
+      <p>
+        Cookie and Privacy Policy: We use cookies and similar technologies to enhance your browsing experience. By
+        continuing to use our site/services, you agree to our
+        <a href="https://nrolabs.com/privacy" target="_blank" style="text-decoration: underline;">Privacy Policy</a>,
+        <a href="https://nrolabs.com/cookies" target="_blank" style="text-decoration: underline;">Cookie Policy</a>,
+        and <a href="https://nrolabs.com/terms" target="_blank" style="text-decoration: underline;">Terms of Use</a>.
+      </p>
+      <p>
+        This site is owned by <strong>nrolabs.com</strong> and is subject to their terms.
+      </p>
+    </div>
+
   </div>
 </template>
 
@@ -55,7 +69,7 @@ export default {
       timer: null,                       // Timer reference for controlling word display timing
       beepSound: new Audio('/beep.ogg'), // Sound effect played between words
       isMuted: false,                    // Controls if the beep sound is muted
-      darkMode: false                    // Toggles dark mode for the application
+      darkMode: true                    // Toggles dark mode for the application
     };
   },
   methods: {

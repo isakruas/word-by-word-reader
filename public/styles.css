@@ -90,3 +90,16 @@ button {
     font-size: 3rem; /* Fixed larger font-size for bigger screens */
   }
 }
+
+a {
+  text-decoration: underline; /* Underline the link */
+  color: inherit; /* Inherit the text color */
+}
+
+a:visited {
+  color: inherit; /* Keep the same color for visited links */
+}
+
+a:hover {
+  text-decoration: underline; /* Maintain underline on hover */
+}
